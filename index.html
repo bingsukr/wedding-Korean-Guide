@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>일본 결혼식 안내서 | 이병욱 · 죠우치 츠키노</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF7F2;
+    --ink:#2E2A27;
+    --mute:#8A8178;
+    --line:#DDD4C7;
+    --accent:#B99470;
+    --sage:#8C9A8E;
+    --alert:#8B2942;
+    --card:#FFFDFA;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-text-size-adjust:100%}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.85;
+    letter-spacing:-.01em;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:520px;margin:0 auto;padding:0 26px 90px}
+  .serif{font-family:"Nanum Myeongjo","Apple SD Gothic Neo",serif}
+
+  /* ── cover ── */
+  .cover{text-align:center;padding:80px 0 64px}
+  .cover .eyebrow{font-size:11px;letter-spacing:.34em;color:var(--mute);text-transform:uppercase;margin-bottom:34px}
+  .cover h1{font-family:"Nanum Myeongjo",serif;font-size:31px;font-weight:400;line-height:1.55;letter-spacing:.02em}
+  .cover .amp{display:block;color:var(--accent);font-size:19px;margin:6px 0;font-weight:400}
+  .cover .sub{margin-top:30px;font-size:13.5px;color:var(--mute);line-height:2.1}
+  .cover .rule{width:1px;height:56px;background:var(--line);margin:36px auto}
+  .cover .date{font-family:"Nanum Myeongjo",serif;font-size:19px;letter-spacing:.08em}
+  .cover .venue{font-size:13px;color:var(--mute);margin-top:8px;letter-spacing:.04em}
+
+  /* ── section ── */
+  section{padding:52px 0;border-top:1px solid var(--line)}
+  .num{font-size:10.5px;letter-spacing:.3em;color:var(--accent);margin-bottom:12px}
+  h2{font-family:"Nanum Myeongjo",serif;font-size:23px;font-weight:400;line-height:1.5;letter-spacing:.01em;margin-bottom:20px}
+  h3{font-size:13px;font-weight:700;letter-spacing:.06em;color:var(--mute);margin:28px 0 12px}
+  p{font-size:14.5px;color:#4A443E;margin-bottom:14px}
+  p.lead{font-size:15px;color:var(--ink)}
+  strong{font-weight:700;color:var(--ink)}
+
+  /* ── key facts ── */
+  .facts{background:var(--card);border:1px solid var(--line);padding:22px 22px 18px;margin:22px 0}
+  .facts dl{display:grid;grid-template-columns:1fr auto;gap:11px 12px;align-items:baseline}
+  .facts dt{font-size:13.5px;color:var(--mute)}
+  .facts dd{font-family:"Nanum Myeongjo",serif;font-size:17px;letter-spacing:.02em;text-align:right}
+  .facts .total{border-top:1px solid var(--line);margin-top:16px;padding-top:14px;display:flex;justify-content:space-between;align-items:baseline}
+  .facts .total span:first-child{font-size:13.5px;font-weight:700}
+  .facts .total span:last-child{font-family:"Nanum Myeongjo",serif;font-size:20px;color:var(--alert)}
+
+  /* ── toc ── */
+  .toc{margin-top:24px}
+  .toc a{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:11px 0;border-bottom:1px dotted var(--line);color:var(--ink);text-decoration:none;font-size:14px}
+  .toc a span:last-child{font-size:11px;color:var(--accent);letter-spacing:.14em;flex-shrink:0}
+
+  /* ── alert block ── */
+  .alert{border:1px solid var(--alert);padding:26px 22px;margin:24px 0;background:#FDFAF9}
+  .alert .big{font-family:"Nanum Myeongjo",serif;font-size:27px;color:var(--alert);text-align:center;line-height:1.5;margin-bottom:6px}
+  .alert .cap{text-align:center;font-size:12.5px;color:var(--mute);letter-spacing:.06em}
+
+  /* ── timeline list ── */
+  ul.tl{list-style:none;margin:8px 0 4px}
+  ul.tl li{display:flex;gap:14px;padding:9px 0;border-bottom:1px dotted var(--line);font-size:14px;align-items:baseline}
+  ul.tl li:last-child{border-bottom:none}
+  ul.tl .t{font-family:"Nanum Myeongjo",serif;font-size:15px;min-width:52px;flex-shrink:0;letter-spacing:.02em}
+  ul.tl .d{flex:1}
+  ul.tl .m{flex-shrink:0;font-size:10px;letter-spacing:.08em;padding:2px 7px;border-radius:2px;white-space:nowrap}
+  .m.stay{background:#F6E7EA;color:var(--alert)}
+  .m.free{background:#EAEFE9;color:#5B6B5B}
+  .m.cond{background:#F6EEDF;color:#8A6A3A}
+
+  /* ── plain list ── */
+  ul.plain{list-style:none;margin:6px 0 2px}
+  ul.plain li{position:relative;padding:6px 0 6px 17px;font-size:14.5px;color:#4A443E;line-height:1.75}
+  ul.plain li::before{content:"";position:absolute;left:0;top:16px;width:5px;height:1px;background:var(--accent)}
+  ul.plain li.no::before{background:var(--alert);width:7px;height:7px;border-radius:50%;top:13px;left:0}
+  ul.plain.ban li{padding-left:19px}
+
+  /* ── ordered ── */
+  ol.steps{list-style:none;counter-reset:s;margin:8px 0}
+  ol.steps li{counter-increment:s;position:relative;padding:11px 0 11px 40px;border-bottom:1px dotted var(--line);font-size:14.5px}
+  ol.steps li:last-child{border-bottom:none}
+  ol.steps li::before{content:counter(s);position:absolute;left:0;top:11px;width:24px;height:24px;border:1px solid var(--accent);color:var(--accent);border-radius:50%;font-family:"Nanum Myeongjo",serif;font-size:12px;display:flex;align-items:center;justify-content:center}
+
+  /* ── compare table ── */
+  .cmp{margin:18px 0}
+  .cmp .row{border-bottom:1px solid var(--line);padding:16px 0}
+  .cmp .row:last-child{border-bottom:none}
+  .cmp .ttl{font-size:14px;font-weight:700;margin-bottom:9px}
+  .cmp .ttl em{font-style:normal;color:var(--accent);font-family:"Nanum Myeongjo",serif;margin-right:8px}
+  .cmp .pair{display:grid;grid-template-columns:38px 1fr;gap:6px 10px;font-size:13.5px;line-height:1.7}
+  .cmp .tag{font-size:10.5px;letter-spacing:.08em;color:var(--mute);padding-top:4px}
+  .cmp .jp{color:var(--ink)}
+  .cmp .kr{color:var(--mute)}
+
+  /* ── info card ── */
+  .info{background:var(--card);border:1px solid var(--line);padding:22px;margin:20px 0;text-align:center}
+  .info .name{font-family:"Nanum Myeongjo",serif;font-size:19px;margin-bottom:6px}
+  .info .addr{font-size:13.5px;color:var(--mute);line-height:1.9}
+  .info .jp{font-size:12px;color:#A79C90}
+  .info a.btn{display:inline-block;margin-top:16px;padding:11px 26px;border:1px solid var(--accent);color:var(--accent);text-decoration:none;font-size:12.5px;letter-spacing:.1em}
+
+  /* ── phrase ── */
+  .ph{border-bottom:1px dotted var(--line);padding:14px 0}
+  .ph:last-child{border-bottom:none}
+  .ph .sit{font-size:11.5px;color:var(--accent);letter-spacing:.1em;margin-bottom:5px}
+  .ph .jpn{font-family:"Nanum Myeongjo",serif;font-size:17px;margin-bottom:3px}
+  .ph .yom{font-size:13px;color:var(--mute)}
+
+  /* ── roles ── */
+  .roles{background:#F3EFE8;padding:18px 20px;margin-top:22px}
+  .roles .h{font-size:12.5px;font-weight:700;letter-spacing:.06em;margin-bottom:10px}
+  .roles p{font-size:13.5px;margin-bottom:7px}
+  .roles .note{font-size:12.5px;color:var(--mute);margin-top:10px;margin-bottom:0}
+
+  .tbd{display:inline-block;font-size:10.5px;letter-spacing:.06em;color:#B08968;background:#F7EFE4;padding:1px 7px;border-radius:2px;margin-left:5px;vertical-align:1px}
+
+  .end{text-align:center;padding:66px 0 20px;border-top:1px solid var(--line)}
+  .end .msg{font-family:"Nanum Myeongjo",serif;font-size:20px;line-height:1.8;margin-bottom:22px}
+  .end .from{font-size:13px;color:var(--mute);letter-spacing:.14em}
+
+  .backtop{display:block;text-align:center;font-size:11.5px;letter-spacing:.14em;color:var(--mute);text-decoration:none;padding:26px 0 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ══════ COVER ══════ -->
+  <header class="cover" id="top">
+    <div class="eyebrow">Wedding Guide</div>
+    <h1 class="serif">이병욱<span class="amp">&amp;</span>죠우치 츠키노</h1>
+    <div class="sub">일본에서 열리는 결혼식,<br>처음이신 분들을 위한 안내</div>
+    <div class="rule"></div>
+    <div class="date serif">2026. 09. 20 <span style="font-size:14px">일요일</span></div>
+    <div class="venue">카사 데 안젤라 바샤미치 · 요코하마</div>
+  </header>
+
+  <!-- ══════ 01 ══════ -->
+  <section id="s1">
+    <div class="num">01 &nbsp;/&nbsp; 인사말</div>
+    <h2>먼 길 와주셔서<br>진심으로 감사합니다</h2>
+    <p class="lead">일본의 결혼식은 한국과 진행 방식이 많이 다릅니다. 당황하지 않고 하루를 온전히 즐기실 수 있도록, 꼭 필요한 것만 담았습니다.</p>
+
+    <div class="facts">
+      <dl>
+        <dt>접수 시작</dt><dd>15:30</dd>
+        <dt>예식 시작</dt><dd>16:30</dd>
+        <dt>피로연 종료 · 배웅</dt><dd>20:02</dd>
+        <dt>완전 해산</dt><dd>20:20</dd>
+      </dl>
+      <div class="total"><span>총 소요 시간</span><span>약 4시간 50분</span></div>
+    </div>
+
+    <p>일본의 피로연은 약 2시간 30분입니다. 한국보다 깁니다.<br><strong>당일 저녁 일정은 비워 두시길 권합니다.</strong></p>
+
+    <h3>시간이 없으시면 이 세 곳만</h3>
+    <nav class="toc">
+      <a href="#s2"><span>끝까지 함께해 주세요</span><span>02</span></a>
+      <a href="#s6"><span>드레스코드</span><span>06 · 07</span></a>
+      <a href="#s8"><span>축의금 안내</span><span>08</span></a>
+    </nav>
+  </section>
+
+  <!-- ══════ 02 ══════ -->
+  <section id="s2">
+    <div class="num">02 &nbsp;/&nbsp; 가장 중요합니다</div>
+    <h2>끝까지 함께해 주세요</h2>
+
+    <div class="alert">
+      <div class="big serif">20 : 02 에 끝납니다</div>
+      <div class="cap">그때까지 자리를 지켜주세요</div>
+    </div>
+
+        <p>한국에서는 예식이 끝나면 돌아가시는 경우가 많지만, <strong>일본에서는 예식 후 피로연 참석이 필수입니다.</strong> 좌석이 지정되어 있기 때문에, 예식이 끝나면 반드시 피로연장으로 이동해 주시고 도중에 나가지 말아 주세요.</p>
+<p>한국에서는 식사를 마치고 먼저 일어나는 것이 자연스럽지만, <strong>일본 피로연은 가장 중요한 순서가 마지막 30분에 몰려 있습니다.</strong></p>
+
+    <h3>마지막 30분에 있는 것</h3>
+    <ul class="tl">
+      <li><span class="t serif">19:34</span><span class="d">신부의 편지 낭독</span></li>
+      <li><span class="t serif">19:44</span><span class="d">양가 부모님께 드리는 선물</span></li>
+      <li><span class="t serif">19:47</span><span class="d">신랑 아버지 인사말</span></li>
+      <li><span class="t serif">19:50</span><span class="d">신랑 인사말 <em style="font-style:normal;color:var(--accent)">한국어 · 일본어</em></span></li>
+      <li><span class="t serif">20:02</span><span class="d"><strong>배웅</strong> — 출구에서 한 분 한 분 배웅합니다</span></li>
+    </ul>
+
+    <p style="margin-top:18px"><strong>이 자리에서 인사를 나눕니다.</strong> 먼저 가시면 인사를 드릴 수 없습니다.</p>
+
+    <h3>자리를 비우셔도 되는 시간</h3>
+    <ul class="tl">
+      <li><span class="t serif">18:05</span><span class="d">환담 (15분)</span><span class="m free">자유</span></li>
+      <li><span class="t serif">18:30</span><span class="d">신랑신부 잠시 퇴장 · 영상 상영</span><span class="m free">자유</span></li>
+      <li><span class="t serif">19:15</span><span class="d">환담 · 테이블별 촬영 <span style="font-size:12px;color:#8A8178">— 우리 테이블 촬영이 끝난 뒤부터</span></span><span class="m cond">조건부</span></li>
+    </ul>
+
+    <h3>반드시 자리에 계셔야 하는 시간</h3>
+    <ul class="tl">
+      <li><span class="t serif">17:12</span><span class="d">단체사진</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:39</span><span class="d">내빈 대표 인사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:44</span><span class="d">내빈 대표 인사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:49</span><span class="d">건배사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:00</span><span class="d">친구 스피치</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:34</span><span class="d">편지 · 선물 · 인사말 · 배웅</span><span class="m stay">착석 필수</span></li>
+    </ul>
+
+    <p style="margin-top:20px"><strong>흡연과 화장실은 「자유」 시간에 부탁드립니다.</strong> 「착석 필수」 시간에는 자리를 뜨지 말아 주세요. <strong>흡연장은 5층입니다.</strong></p>
+    <p>부득이하게 먼저 나가셔야 하는 경우, 당일이 아니라 <strong>미리</strong> 신랑신부에게 알려주세요.</p>
+  </section>
+
+  <!-- ══════ 03 ══════ -->
+  <section id="s3">
+    <div class="num">03 &nbsp;/&nbsp; 문화 차이</div>
+    <h2>한국 결혼식과<br>다른 점 일곱 가지</h2>
+
+    <div class="cmp">
+      <div class="row">
+        <div class="ttl"><em>01</em>소요 시간</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">예식 30분 + 식사 후 자유 해산</div>
+          <div class="tag">일본</div><div class="jp"><strong>접수부터 해산까지 약 5시간</strong></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>02</em>중도 퇴장</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">식사 후 먼저 가는 것이 일반적</div>
+          <div class="tag">일본</div><div class="jp"><strong>끝까지 착석이 기본.</strong> 마지막에 하이라이트가 있습니다</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>03</em>초대 방식</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">널리 알리는 문화</div>
+          <div class="tag">일본</div><div class="jp"><strong>초대제.</strong> 참석 여부가 식사·좌석과 직결됩니다</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>04</em>축의금</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">접수처에서 봉투 전달</div>
+          <div class="tag">일본</div><div class="jp"><strong>이번에는 한국에서 오시는 분들께 축의금을 받지 않습니다.</strong> 참석만으로 충분합니다</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>05</em>접수처</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">그냥 지나칠 수도 있음</div>
+          <div class="tag">일본</div><div class="jp"><strong>전원 반드시 접수처를 거칩니다.</strong> 여기서 좌석표를 받습니다</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>06</em>복장</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">비교적 자유로움</div>
+          <div class="tag">일본</div><div class="jp"><strong>격식을 갖춥니다.</strong> 흰색 금지, 올블랙 주의</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="ttl"><em>07</em>좌석 · 답례품</div>
+        <div class="pair">
+          <div class="tag">한국</div><div class="kr">자유석이 많고 답례품 없음</div>
+          <div class="tag">일본</div><div class="jp"><strong>지정석</strong>이며, 돌아가실 때 <strong>답례품</strong>을 들고 갑니다</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════ 04 ══════ -->
+  <section id="s4">
+    <div class="num">04 &nbsp;/&nbsp; 오시는 길</div>
+    <h2>일시와 장소</h2>
+
+    <div class="info">
+      <div class="name serif">카사 데 안젤라 바샤미치</div>
+      <div class="jp">カサ・デ・アンジェラ馬車道</div>
+      <div class="addr" style="margin-top:12px">
+        가나가와현 요코하마시 나카구 혼초 4-39<br>
+        <span class="jp">神奈川県横浜市中区本町4-39</span><br>
+        TEL 045-307-8700
+      </div>
+      <div style="font-size:11.5px;color:#A79C90;margin-top:10px;letter-spacing:.04em">택시 기사님께 위 일본어 주소를 보여주세요</div>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E4%B8%AD%E5%8C%BA%E6%9C%AC%E7%94%BA4-39" target="_blank" rel="noopener">지도 열기</a>
+    </div>
+
+    <h3>교통</h3>
+    <ul class="plain">
+      <li><strong>바샤미치역 7번 출구</strong>에서 왼쪽, 도보 1분 — 미나토미라이선</li>
+      <li>간나이역 도보 5분 — JR · 요코하마시영지하철</li>
+    </ul>
+
+    <h3>도착 시각</h3>
+    <ul class="tl">
+      <li><span class="t serif">15:30</span><span class="d">접수 시작</span></li>
+      <li><span class="t serif">15:45</span><span class="d"><strong>이 시각까지 도착을 권장드립니다</strong></span></li>
+      <li><span class="t serif">16:05</span><span class="d">친척분들 예배당 안내</span></li>
+      <li><span class="t serif">16:20</span><span class="d">그 외 하객분들 예배당 안내</span></li>
+      <li><span class="t serif">16:30</span><span class="d">예식 시작 — <strong>이후에는 입장하실 수 없습니다</strong></span></li>
+    </ul>
+  </section>
+
+  <!-- ══════ 05 ══════ -->
+  <section id="s5">
+    <div class="num">05 &nbsp;/&nbsp; 진행</div>
+    <h2>당일 타임라인</h2>
+
+    <ul class="tl">
+      <li><span class="t serif">15:30</span><span class="d">접수 오픈</span></li>
+      <li><span class="t serif">15:45</span><span class="d">하객 도착 권장</span></li>
+      <li><span class="t serif">16:05</span><span class="d">친척 예배당 안내</span></li>
+      <li><span class="t serif">16:20</span><span class="d">그 외 하객 예배당 안내</span></li>
+      <li><span class="t serif">16:30</span><span class="d"><strong>예식 시작</strong></span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">16:55</span><span class="d">퇴장 · 화동</span></li>
+      <li><span class="t serif">16:58</span><span class="d">가든에서 환영 · 건배</span></li>
+      <li><span class="t serif">17:12</span><span class="d">단체사진</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:15</span><span class="d">플라워샤워 &amp; 비눗방울</span></li>
+      <li><span class="t serif">17:18</span><span class="d">피로연장 입장</span></li>
+      <li><span class="t serif">17:30</span><span class="d">오프닝 무비</span></li>
+      <li><span class="t serif">17:32</span><span class="d">신랑신부 입장</span></li>
+      <li><span class="t serif">17:35</span><span class="d">피로연 시작 인사</span></li>
+      <li><span class="t serif">17:36</span><span class="d">웰컴 스피치 — 신랑 한국어 → 신부 일본어</span></li>
+      <li><span class="t serif">17:39</span><span class="d">내빈 대표 인사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:44</span><span class="d">내빈 대표 인사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:49</span><span class="d">건배사</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">17:54</span><span class="d">건배 라운드 (테이블별 인사)</span></li>
+      <li><span class="t serif">18:05</span><span class="d">환담 (15분)</span><span class="m free">자유</span></li>
+      <li><span class="t serif">18:20</span><span class="d">케이크 커팅</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">18:25</span><span class="d">퍼스트 바이트</span></li>
+      <li><span class="t serif">18:30</span><span class="d">신랑신부 신랑신부 잠시 퇴장 · 영상 상영</span><span class="m free">자유</span></li>
+      <li><span class="t serif">18:55</span><span class="d">재입장</span></li>
+      <li><span class="t serif">19:00</span><span class="d">신랑 친구 스피치</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:05</span><span class="d">신부 친구 스피치</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:10</span><span class="d">퀴즈 결과 발표</span></li>
+      <li><span class="t serif">19:15</span><span class="d">환담 · 테이블별 기념촬영 <span style="font-size:12px;color:#8A8178">— 우리 테이블 촬영이 끝난 뒤부터</span></span><span class="m cond">조건부</span></li>
+      <li><span class="t serif">19:34</span><span class="d">신부의 편지</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:39</span><span class="d">신부의 노래</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:44</span><span class="d">부모님께 드리는 선물</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:47</span><span class="d">신랑 아버지 인사말</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:50</span><span class="d">신랑 인사말 (한국어 · 일본어)</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:54</span><span class="d">퇴장</span></li>
+      <li><span class="t serif">19:56</span><span class="d">엔딩롤</span></li>
+      <li><span class="t serif">20:02</span><span class="d"><strong>배웅</strong></span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">20:20</span><span class="d">해산</span></li>
+    </ul>
+
+  </section>
+
+  <!-- ══════ 06 ══════ -->
+  <section id="s6">
+    <div class="num">06 &nbsp;/&nbsp; 드레스코드</div>
+    <h2>남성</h2>
+
+    <h3>기본</h3>
+    <ul class="plain">
+      <li>검정 · 네이비 · 다크그레이 정장</li>
+      <li>흰색 드레스셔츠</li>
+      <li>밝은 색 넥타이 — 흰색 · 실버 · 파스텔 권장</li>
+      <li>검정 가죽 구두 · 검정 양말</li>
+    </ul>
+
+    <h3>피해주세요</h3>
+    <ul class="plain ban">
+      <li class="no"><strong>올블랙</strong> — 검정 정장 + 검정 셔츠 + 검정 넥타이는 장례식 복장으로 보입니다</li>
+      <li class="no">스니커즈 · 샌들 · 캐주얼 로퍼</li>
+      <li class="no">청바지 · 치노팬츠</li>
+      <li class="no">애니멀 프린트 벨트 · 구두</li>
+      <li class="no">큰 백팩 — 별도 보관 가능합니다</li>
+    </ul>
+    <p style="margin-top:16px">9월 저녁 예식입니다. 재킷은 착용해 주세요.</p>
+  </section>
+
+  <!-- ══════ 07 ══════ -->
+  <section id="s7">
+    <div class="num">07 &nbsp;/&nbsp; 드레스코드</div>
+    <h2>여성</h2>
+
+    <h3>기본</h3>
+    <ul class="plain">
+      <li>원피스 또는 정장</li>
+      <li>무릎이 덮이는 길이</li>
+      <li><strong>스타킹 착용</strong> — 맨다리는 실례로 여겨집니다</li>
+      <li>작은 클러치백 · 힐</li>
+    </ul>
+
+    <h3>절대 피해주세요</h3>
+    <ul class="plain ban">
+      <li class="no"><strong>흰색 · 아이보리 · 베이지 계열</strong> — 신부의 색입니다</li>
+      <li class="no">올블랙 — 장례식 복장으로 보입니다</li>
+      <li class="no">어깨 · 가슴이 많이 드러나는 옷 — 볼레로나 숄을 함께</li>
+      <li class="no">애니멀 프린트 · 모피 · 가죽</li>
+      <li class="no">통굽 · 부츠 · 샌들</li>
+      <li class="no">생화 코사지 — 신부의 부케와 겹칩니다</li>
+    </ul>
+    <p style="margin-top:16px">큰 짐은 접수처 근처에서 맡기실 수 있습니다.</p>
+  </section>
+
+  <!-- ══════ 08 ══════ -->
+  <section id="s8">
+    <div class="num">08 &nbsp;/&nbsp; 축의금</div>
+    <h2>축의금은<br>준비하지 않으셔도 됩니다</h2>
+
+    <p class="lead">한국에서 먼 길 와주시는 것만으로 이미 충분합니다. 항공료와 시간을 들여 와주시는 그 마음이 저희에게 가장 큰 선물입니다.</p>
+
+    <ul class="plain">
+      <li><strong>한국에서 오시는 분들은 축의금을 준비하지 않으셔도 됩니다</strong></li>
+      <li>부담 갖지 마시고, 편하게 오셔서 즐겨주세요</li>
+    </ul>
+
+    <h3>그래도 꼭 마음을 전하고 싶으시다면</h3>
+    <ul class="plain">
+      <li>접수처에서 <strong>두 손으로</strong> 전달해 주세요</li>
+      <li>봉투 겉면에 <strong>본인 성함</strong>을 꼭 적어주세요 — 한글 그대로 괜찮습니다</li>
+      <li>봉투가 없으시면 <strong>접수처에 흰 봉투와 펜</strong>을 준비해 두었습니다</li>
+      <li>성함과 금액이 적혀 있지 않으면 나중에 누가 주셨는지 알 수 없습니다</li>
+    </ul>
+
+    <p style="margin-top:20px"><strong>다시 한 번 말씀드립니다. 참석해 주시는 것만으로 정말 감사합니다.</strong></p>
+  </section>
+
+  <!-- ══════ 09 ══════ -->
+  <section id="s9">
+    <div class="num">09 &nbsp;/&nbsp; 접수처</div>
+    <h2>도착하시면<br>가장 먼저 접수처로</h2>
+
+    <p>한국과 달리, 일본에서는 <strong>모든 하객이 반드시 접수처를 거칩니다.</strong> 바로 식장으로 들어가지 말아 주세요.</p>
+
+    <ol class="steps">
+      <li>접수처에서 <strong>「오메데토우고자이마스」</strong> 축하 인사</li>
+      <li><strong>방명록</strong>에 성함과 주소를 적습니다</li>
+      <li><strong>좌석표</strong>를 받습니다 — 자리가 정해져 있습니다</li>
+      <li>짐을 맡기고 대기실 또는 예배당으로 이동</li>
+    </ol>
+
+    <div class="facts" style="text-align:center">
+      <div style="font-size:12.5px;color:var(--mute);letter-spacing:.08em">접수 시간</div>
+      <div class="serif" style="font-size:22px;margin-top:6px">15:30 &nbsp;—&nbsp; 16:20</div>
+    </div>
+
+    <p style="font-size:13.5px;color:var(--mute)">축의금은 준비하지 않으셔도 됩니다. 접수처 담당자에게 한국어 안내문을 준비해 두었으니, 어려우시면 편하게 말씀해 주세요.</p>
+  </section>
+
+  <!-- ══════ 10 ══════ -->
+  <section id="s10">
+    <div class="num">10 &nbsp;/&nbsp; 예식</div>
+    <h2>예식의 흐름과 의미</h2>
+    <p style="font-size:13px;color:var(--mute);letter-spacing:.04em">16:30 — 16:55 &nbsp;·&nbsp; 예배당</p>
+
+    <ul class="plain">
+      <li><strong>목사 · 신랑 입장</strong> — 신랑이 먼저 제단 앞에서 기다립니다</li>
+      <li><strong>신부 입장</strong> — 혼자 입장 → 언니가 베일을 내려줍니다 → 아버지와 함께 걷습니다</li>
+      <li><strong>화동 입장</strong> — 반지를 든 아이들이 함께 걸어옵니다</li>
+      <li><strong>축도 · 메시지 · 서약</strong> — 목사의 축복 기도와 두 사람의 서약</li>
+      <li><strong>반지 교환 · 베일업 · 키스</strong> — 조명이 어두워집니다</li>
+      <li><strong>서명 · 결혼 선언 · 축도</strong></li>
+      <li><strong>퇴장</strong> — 화동이 앞장섭니다</li>
+    </ul>
+
+    <h3>하객분들께서 하실 일</h3>
+    <ul class="plain">
+      <li>신부 입장 때 <strong>일어서 주세요</strong> — 안내가 있습니다</li>
+      <li>결혼 선언 후 <strong>박수</strong></li>
+    </ul>
+
+    <h3>16:58 &nbsp;가든 아프터 세레모니</h3>
+    <ul class="plain">
+      <li>맥주 · 음료 · 비눗방울을 나눠드립니다</li>
+      <li>사회자의 <strong>「건배」</strong> 신호에 함께 건배</li>
+      <li><strong>17:12 단체사진</strong> — 전원 참여합니다</li>
+      <li>17:15 플라워샤워 &amp; 비눗방울로 배웅</li>
+    </ul>
+  </section>
+
+  <!-- ══════ 11 ══════ -->
+  <section id="s11">
+    <div class="num">11 &nbsp;/&nbsp; 피로연</div>
+    <h2>피로연의 흐름</h2>
+    <p style="font-size:13px;color:var(--mute);letter-spacing:.04em">17:18 — 20:02 &nbsp;·&nbsp; 피로연장</p>
+
+    <ul class="tl">
+      <li><span class="t serif">17:30</span><span class="d">오프닝 무비 → 계단으로 입장</span></li>
+      <li><span class="t serif">17:36</span><span class="d">웰컴 스피치 — 신랑이 한국어로, 신부가 일본어로 인사드립니다</span></li>
+      <li><span class="t serif">17:49</span><span class="d">건배사 — 잔을 들고 함께 「간파이」</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">18:20</span><span class="d">케이크 커팅 · 퍼스트 바이트 — 사진 촬영 시간입니다</span></li>
+      <li><span class="t serif">18:30</span><span class="d">신랑신부가 잠시 자리를 비웁니다 · 영상 상영</span><span class="m free">자유</span></li>
+      <li><span class="t serif">19:00</span><span class="d">친구 스피치</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">19:10</span><span class="d">퀴즈 결과 발표 — 경품이 있습니다</span></li>
+      <li><span class="t serif">19:15</span><span class="d">환담 — 사회자가 테이블별로 불러 기념촬영. 우리 테이블 촬영이 끝난 뒤부터 자리를 비우실 수 있습니다</span><span class="m cond">조건부</span></li>
+      <li><span class="t serif">19:34</span><span class="d"><strong>신부의 편지 → 신랑 인사말</strong> — 이 결혼식의 하이라이트입니다</span><span class="m stay">착석 필수</span></li>
+      <li><span class="t serif">20:02</span><span class="d"><strong>배웅</strong> — 출구에서 한 분 한 분 배웅합니다</span><span class="m stay">착석 필수</span></li>
+    </ul>
+  </section>
+
+  <!-- ══════ 12 ══════ -->
+  <section id="s12">
+    <div class="num">12 &nbsp;/&nbsp; 주의</div>
+    <h2>이것만은<br>피해주세요</h2>
+    <ul class="plain ban">
+      <li class="no"><strong>중간에 먼저 가지 않기</strong> — 가장 중요합니다</li>
+      <li class="no"><strong>지각하지 않기</strong> — 16:30 이후에는 예배당 입장이 불가합니다</li>
+      <li class="no"><strong>접수처를 지나치지 않기</strong></li>
+      <li class="no">스피치 · 편지 낭독 중 대화</li>
+      <li class="no">「착석 필수」 시간대에 흡연장 · 화장실로 이동하기</li>
+    </ul>
+  </section>
+
+  <!-- ══════ 13 ══════ -->
+  <section id="s13">
+    <div class="num">13 &nbsp;/&nbsp; 일본어</div>
+    <h2>이 세 마디면<br>충분합니다</h2>
+
+    <div class="ph">
+      <div class="sit">접수처에서</div>
+      <div class="jpn">本日はおめでとうございます</div>
+      <div class="yom">혼지츠와 오메데토우 고자이마스</div>
+    </div>
+    <div class="ph">
+      <div class="sit">감사 인사</div>
+      <div class="jpn">ありがとうございます</div>
+      <div class="yom">아리가토우 고자이마스</div>
+    </div>
+    <div class="ph">
+      <div class="sit">건배</div>
+      <div class="jpn">乾杯</div>
+      <div class="yom">간파이</div>
+    </div>
+  </section>
+
+  <!-- ══════ 14 ══════ -->
+  <section id="s14">
+    <div class="num">14 &nbsp;/&nbsp; 여행</div>
+    <h2>여행 팁</h2>
+    <ul class="plain">
+      <li><strong>와이파이</strong> — 공항에서 포켓와이파이 대여 또는 eSIM 권장</li>
+      <li><strong>결제</strong> — 현금이 필요한 곳이 아직 많습니다</li>
+      <li><strong>숙소</strong> — 요코하마 지역을 추천드립니다</li>
+    </ul>
+  </section>
+
+  <footer class="end">
+    <div class="msg serif">만나 뵙기를<br>기다리고 있겠습니다</div>
+    <div class="from">병욱 · 츠키노 드림</div>
+    <a class="backtop" href="#top">↑ &nbsp;맨 위로</a>
+  </footer>
+
+</div>
+</body>
+</html>
